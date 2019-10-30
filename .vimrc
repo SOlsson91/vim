@@ -4,11 +4,11 @@ set nowrap
 " Set tab size to 4 spaces
 set tabstop=4
 
-" Set autoindent on
-set autoindent
-
 " Set shift width to 4 spaces
 set shiftwidth=4
+
+" Set autoindent on
+set autoindent
 
 " Convert tabs to spaces
 set expandtab
