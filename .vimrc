@@ -1,36 +1,58 @@
-" Set no wrap
+" VIM Configuration File
+" Author: Sebastian Olsson
+" Description: Personal vimconfig, used for C++, python, javascript, html and css development
+"              vimrc specific
+" ----------------------------------
+" Contact:
+" Github: github.com/Spunkt
+" Twitter: twitter.com/solsson91
+" Mail: me@sebastianolsson.com
+
+" ----------------------------------
+" General setup
+" ----------------------------------
+filetype plugin on
 set nowrap
-
-" Set tab size to 4 spaces
 set tabstop=4
-
-" Set shift width to 4 spaces
 set shiftwidth=4
-
-" Set autoindent on
 set autoindent
-
-" Convert tabs to spaces
 set expandtab
-
-" Set line number foreground and background color
-highlight LineNr ctermbg=darkgray ctermfg=white
-
-" Set swap file directory
 set nobackup
-
-" Set line number and ruler
 set number
 set ruler
+set wildmenu
+syntax enable
 
-" Set tab navigation with Ctrl-tab
+" ---------- Color ----------
+" Set line number foreground and background color
+highlight LineNr ctermbg=darkgray ctermfg=white
+" Show Max with
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
+set termguicolors
+colorscheme Benokai
+
+" ---------- Search -----------
+set incsearch
+set hlsearch
+noremap <C-l> :nohlsearch<CR><C-l>
+noremap! <C-l> <ESC>:nohlsearch<CR><C-l>
+
+" ---------- Folding ----------
+set foldenable
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+
+" ---------- Movement ----------
+" Remap move to first/last character
+nnoremap B ^
+nnoremap E $
+" $/^ doesn't do anything
+nnoremap $ <nop>
+nnoremap ^ <nop>
+" Tab navigation (Ctrl-tab)
 nnoremap th :tabfirst<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tl :tablast<CR>
-
-" Set color scheme
-colorscheme Benokai
-
-" Configure syntax highlight files
-syntax enable
