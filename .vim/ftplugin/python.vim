@@ -8,5 +8,7 @@
 " Mail: me@sebastianolsson.com
 
 " ----------------------------------
+set termguicolors
+colorscheme Badwolf 
 nnoremap <buffer> <F5> :exec '!clear; python' shellescape(@%, 1)<cr>
 

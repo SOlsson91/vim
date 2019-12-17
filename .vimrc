@@ -12,10 +12,11 @@
 " ----------------------------------
 filetype plugin on
 set nowrap
-set tabstop=4
-set shiftwidth=4
-set autoindent
 set expandtab
+set autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set nobackup
 set number
 set ruler
@@ -25,11 +26,8 @@ syntax enable
 " ---------- Color ----------
 " Set line number foreground and background color
 highlight LineNr ctermbg=darkgray ctermfg=white
-" Show Max with
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
-set termguicolors
-colorscheme Benokai
 
 " ---------- Search -----------
 set incsearch
