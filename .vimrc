@@ -19,6 +19,7 @@ set softtabstop=4
 set shiftwidth=4
 set nobackup
 set relativenumber
+set number
 set ruler
 set wildmenu
 syntax enable
