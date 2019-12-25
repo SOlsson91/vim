@@ -9,6 +9,6 @@
 
 " ----------------------------------
 set termguicolors
-colorscheme Badwolf 
+colorscheme Benokai
 nnoremap <buffer> <F5> :exec '!clear; python' shellescape(@%, 1)<cr>
 
