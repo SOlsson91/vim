@@ -8,6 +8,22 @@
 " Mail: me@sebastianolsson.com
 
 " ----------------------------------
+" Plugins
+" ----------------------------------
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/NerdTree'
+
+call vundle#end()
+filetype plugin indent on
+
+" ---------- NerdTree ----------
+
+" ----------------------------------
 " General setup
 " ----------------------------------
 filetype plugin on
@@ -21,6 +37,7 @@ set nobackup
 set relativenumber
 set number
 set ruler
+set path+=**
 set wildmenu
 syntax enable
 
