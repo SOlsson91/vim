@@ -22,6 +22,7 @@ call vundle#end()
 filetype plugin indent on
 
 " ---------- NerdTree ----------
+map <F2> :NERDTreeToggle<CR>
 
 " ----------------------------------
 " General setup
