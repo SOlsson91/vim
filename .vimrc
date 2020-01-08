@@ -12,13 +12,15 @@
 " ----------------------------------
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/NerdTree'
+call plug#end()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'preservim/NerdTree'
-
-call vundle#end()
 filetype plugin indent on
 
 " ---------- NerdTree ----------
