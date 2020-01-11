@@ -11,7 +11,7 @@
 " C++ Specific
 " ----------------------------------
 set termguicolors
-colorscheme Benokai
+colorscheme gruvbox
 " Switch between header/source with F4
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 " Run make with D7
