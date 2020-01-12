@@ -21,16 +21,15 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/NerdTree'
-Plug 'ycm-core/YouCompleteMe'
 Plug 'octol/vim-cpp-enhanced-highlight'
+" Can't get YCM to work propperly
+"Plug 'ycm-core/YouCompleteMe'
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 filetype plugin indent on
 
 " ---------- NerdTree ----------
 map <F2> :NERDTreeToggle<CR>
-
-" ---------- YouCompleteMe ----------
-let g:ycm_global_ycm_extra_conf = '$HOME/.vim/ycm_extra_conf/ycm_extra_conf.py'
 
 " ----------------------------------
 " General setup
