@@ -23,14 +23,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/NerdTree'
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Can't get YCM to work propperly
-Plug 'ycm-core/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'ycm-core/YouCompleteMe'
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 filetype plugin indent on
 
 " ---------- NerdTree ----------
 map <F2> :NERDTreeToggle<CR>
 
+" ---------- YouCompleteMe ----------
 let g:ycm_python_interpreter_path = ''
 let g:ycm_python_sys_path = []
 let g:ycm_extra_conf_vim_data = [
@@ -38,7 +39,6 @@ let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_sys_path'
   \]
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-
 
 " ----------------------------------
 " General setup
@@ -88,3 +88,4 @@ nnoremap th :tabfirst<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tl :tablast<CR>
+
