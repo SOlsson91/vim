@@ -22,9 +22,8 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/NerdTree'
 Plug 'octol/vim-cpp-enhanced-highlight'
-" Can't get YCM to work propperly
-"Plug 'ycm-core/YouCompleteMe'
-"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'ycm-core/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 filetype plugin indent on
 
