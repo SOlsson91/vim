@@ -31,6 +31,7 @@ filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
 
 " ---------- YouCompleteMe ----------
+set encoding=utf-8
 let g:ycm_python_interpreter_path = ''
 let g:ycm_python_sys_path = []
 let g:ycm_extra_conf_vim_data = [
