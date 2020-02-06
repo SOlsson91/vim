@@ -14,3 +14,4 @@ set spelllang=en_gb
 set spell
 set linebreak
 
+nnoremap <F5> :set nospell! <CR>
