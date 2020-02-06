@@ -1,15 +1,16 @@
 " VIM Configuration File
 " Author: Sebastian Olsson
-" Description: Personal vimconfig, used for C++, python, javascript, html and css development
+" Description: Personal vimconfig
 " ----------------------------------
 " Contact:
-" Github: github.com/Spunkt
-" Twitter: twitter.com/solsson91
-" Mail: me@sebastianolsson.com
-
+" Github:       github.com/Spunkt
+" Twitter:      twitter.com/solsson91
+" Mail:         me@sebastianolsson.com
+" Website:      sebastianolsson.com
 " ----------------------------------
 " Plugins
 " ----------------------------------
+
 set nocompatible
 filetype off
 
@@ -57,14 +58,21 @@ set ruler
 set path+=**
 set wildmenu
 syntax enable
+set noerrorbells visualbell t_vb=
+
+set shortmess+=I " Disable the default vim startup message
+set laststatus=2
+"set hidden
 
 " ---------- Color ----------
 " Set line number foreground and background color
-highlight LineNr ctermbg=darkgray ctermfg=white
-set colorcolumn=110
-highlight ColorColumn ctermbg=darkgray
+"highlight LineNr ctermbg=darkgray ctermfg=white
+"set colorcolumn=110
+"highlight ColorColumn ctermbg=darkgray
 
 " ---------- Search -----------
+set ignorecase
+set smartcase
 set incsearch
 set hlsearch
 noremap <C-l> :nohlsearch<CR><C-l>
@@ -80,12 +88,25 @@ nnoremap <space> za
 " Remap move to first/last character
 nnoremap B ^
 nnoremap E $
+
+" Disable Arrowkeys
+nnoremap <Left>     <nop>
+nnoremap <Right>    <nop>
+nnoremap <Up>       <nop>
+nnoremap <Down>     <nop>
+
+inoremap <Left>     <nop>
+inoremap <Right>    <nop>
+inoremap <Up>       <nop>
+inoremap <Down>     <nop>
+
 " $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
+nnoremap $          <nop>
+nnoremap ^          <nop>
 " Tab navigation (Ctrl-tab)
 nnoremap th :tabfirst<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tl :tablast<CR>
 
+nmap Q <nop> " 'Q' in normal mode enters Ex mode.

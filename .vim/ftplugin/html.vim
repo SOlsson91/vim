@@ -8,9 +8,8 @@
 " Mail:         me@sebastianolsson.com
 " Website:      sebastianolsson.com
 " ----------------------------------
-" Text Specific
+" HTML Specific
 " ----------------------------------
-set spelllang=en_gb
-set spell
-set linebreak
-
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
