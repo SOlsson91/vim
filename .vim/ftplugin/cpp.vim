@@ -10,7 +10,7 @@
 " ----------------------------------
 " C++ Specific
 " ----------------------------------
-set termguicolors
+"set termguicolors NOT WORKING WITH st
 set background=dark
 colorscheme gruvbox
 
