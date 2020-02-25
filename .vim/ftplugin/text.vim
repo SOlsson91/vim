@@ -11,7 +11,7 @@
 " Text Specific
 " ----------------------------------
 set spelllang=en_gb
-set spell
+set nospell
 set linebreak
 
 nnoremap <F5> :set nospell! <CR>
