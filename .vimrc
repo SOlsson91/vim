@@ -109,6 +109,3 @@ nnoremap th :tabfirst<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tl :tablast<CR>
-
-" 'Q' in normal mode enters Ex mode.
-nmap Q <nop> 
