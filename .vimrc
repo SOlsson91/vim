@@ -1,4 +1,4 @@
-" VIM Configuration File
+"VIM Configuration File
 " Author: Sebastian Olsson
 " Description: Personal vimconfig
 " ----------------------------------
@@ -26,6 +26,8 @@ Plug 'preservim/NerdTree'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-css-color'
 call plug#end()
 filetype plugin indent on
 
@@ -46,6 +48,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 " General setup
 " ----------------------------------
 filetype plugin on
+set laststatus=2
 set nowrap
 set expandtab
 set autoindent
