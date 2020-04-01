@@ -65,16 +65,7 @@ syntax enable
 set noerrorbells visualbell t_vb=
 
 set shortmess+=I " Disable the default vim startup message
-"set hidden
 
-" ---------- Color ----------
-" Set line number foreground and background color
-"highlight LineNr ctermbg=darkgray ctermfg=white
-"set colorcolumn=110
-"highlight ColorColumn ctermbg=darkgray
-if !has('gui_running')
-  set t_Co=256
-endif
 " ---------- Search -----------
 set ignorecase
 set smartcase
