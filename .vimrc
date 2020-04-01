@@ -65,7 +65,6 @@ syntax enable
 set noerrorbells visualbell t_vb=
 
 set shortmess+=I " Disable the default vim startup message
-set laststatus=2
 "set hidden
 
 " ---------- Color ----------
@@ -73,7 +72,9 @@ set laststatus=2
 "highlight LineNr ctermbg=darkgray ctermfg=white
 "set colorcolumn=110
 "highlight ColorColumn ctermbg=darkgray
-
+if !has('gui_running')
+  set t_Co=256
+endif
 " ---------- Search -----------
 set ignorecase
 set smartcase

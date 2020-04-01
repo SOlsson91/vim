@@ -12,7 +12,7 @@
 " ----------------------------------
 "set termguicolors NOT WORKING WITH st
 set background=dark
-colorscheme gruvbox
+"colorscheme gruvbox
 
 
 
