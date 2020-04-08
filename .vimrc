@@ -63,7 +63,6 @@ set path+=**
 set wildmenu
 syntax enable
 set noerrorbells visualbell t_vb=
-
 set shortmess+=I " Disable the default vim startup message
 
 " ---------- Search -----------
