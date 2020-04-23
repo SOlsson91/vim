@@ -74,10 +74,10 @@ noremap <C-l> :nohlsearch<CR><C-l>
 noremap! <C-l> <ESC>:nohlsearch<CR><C-l>
 
 " ---------- Folding ----------
-set foldenable
-set foldmethod=indent
-set foldlevel=99
-nnoremap <space> za
+"set foldenable
+"set foldmethod=indent
+"set foldlevel=99
+"nnoremap <space> za
 
 " ---------- Movement ----------
 " Remap move to first/last character
