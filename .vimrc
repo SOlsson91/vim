@@ -28,6 +28,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
+Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 filetype plugin indent on
 

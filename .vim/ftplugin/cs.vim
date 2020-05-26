@@ -10,6 +10,3 @@
 " ----------------------------------
 " CSharp Specific
 " ----------------------------------
-set termguicolors
-colorscheme Badwolf 
-
