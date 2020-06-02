@@ -94,6 +94,8 @@ let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
+set noshowmode
+
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -140,3 +142,4 @@ inoremap <Up>       <nop>
 inoremap <Down>     <nop>
 nnoremap $          <nop>
 nnoremap ^          <nop>
+
