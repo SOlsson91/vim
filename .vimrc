@@ -94,6 +94,9 @@ let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
+let g:lightline = {
+	\ 'colorscheme': 'gruvbox',
+	\ }
 set noshowmode
 
 nnoremap <leader>h :wincmd h<CR>
