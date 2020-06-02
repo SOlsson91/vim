@@ -70,8 +70,8 @@ Plug 'OmniSharp/omnisharp-vim'
 
 "Plug 'tpope/vim-fugitive'
 "Plug 'sheerun/vim-polyglot'
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 Plug 'morhetz/gruvbox'
 call plug#end()
@@ -98,8 +98,11 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
+
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
+
+nnoremap <C-p> :GFiles<CR>
 
 inoremap <silent><expr> <TAB>
             \ pumvisible() ? "\<C-n>" :
