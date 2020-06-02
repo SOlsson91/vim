@@ -49,6 +49,8 @@ set shortmess+=c
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+set laststatus=2
+
 " ----------------------------------
 " Plugins
 " ----------------------------------
@@ -67,6 +69,7 @@ Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
 
 "Plug 'tpope/vim-fugitive'
 "Plug 'sheerun/vim-polyglot'
