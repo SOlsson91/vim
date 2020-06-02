@@ -13,7 +13,6 @@
 " ----------------------------------
 syntax on
 
-set guicursor=
 set noshowmatch
 set nohlsearch
 set hidden
@@ -67,6 +66,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'sheerun/vim-polyglot'
 
 "Plug 'tpope/vim-fugitive'
 "Plug 'sheerun/vim-polyglot'
