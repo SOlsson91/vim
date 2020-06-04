@@ -7,10 +7,10 @@
 " Twitter:  twitter.com/solsson91
 " Mail:     me@sebastianolsson.com
 " Website:  sebastianolsson.com
-
 " ----------------------------------
 " General setup
 " ----------------------------------
+
 syntax on
 
 set noshowmatch
@@ -70,9 +70,6 @@ Plug 'mbbill/undotree'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
-
-"Plug 'tpope/vim-fugitive'
-"Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
