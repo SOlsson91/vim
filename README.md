@@ -1,10 +1,6 @@
 # Vim Settings
-My personal development enviroment used to code:
-- C++
-- Python
-- Javascript
-- HTML/CSS
-- Shell
+My personal development enviroment.
+
 
 To Setup, add symlinc between git folder and vim settings and vimrc:
 
