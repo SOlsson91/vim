@@ -13,5 +13,6 @@
 set spelllang=en_gb
 set nospell
 set linebreak
+set colorcolumn= 
 
 nnoremap <F5> :set nospell! <CR>
