@@ -95,6 +95,9 @@ let g:lightline = {
 	\ }
 set noshowmode
 
+" ----------------------------------
+" Keybindings
+" ----------------------------------
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
