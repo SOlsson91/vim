@@ -131,9 +131,9 @@ nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
 nnoremap <leader>cr :CocRestart
 
+" Remove the use of some keys
 nnoremap B ^
 nnoremap E $
-" Remove the use of some keys
 nnoremap <Left>     <nop>
 nnoremap <Right>    <nop>
 nnoremap <Up>       <nop>
