@@ -131,6 +131,9 @@ nnoremap <leader>cr :CocRestart
 " Remove the use of some keys
 nnoremap B ^
 nnoremap E $
+nnoremap $          <nop>
+nnoremap ^          <nop>
+
 nnoremap <Left>     <nop>
 nnoremap <Right>    <nop>
 nnoremap <Up>       <nop>
@@ -139,5 +142,3 @@ inoremap <Left>     <nop>
 inoremap <Right>    <nop>
 inoremap <Up>       <nop>
 inoremap <Down>     <nop>
-nnoremap $          <nop>
-nnoremap ^          <nop>
