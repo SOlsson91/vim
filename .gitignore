@@ -3,3 +3,4 @@
 */plugged
 */autoload
 *.netrwhist
+.vim/coc-settings.json
