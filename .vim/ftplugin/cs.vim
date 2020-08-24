@@ -10,6 +10,7 @@
 " ----------------------------------
 " CSharp Specific
 " ----------------------------------
+let g:OmniSharp_server_stdio = 0
 let g:OmniSharp_server_use_mono = 1
 " Set the type lookup function to use the preview window instead of echoing it
 "let g:OmniSharp_typeLookupInPreview = 1
@@ -42,4 +43,4 @@ set previewheight=5
 let g:ale_linters = { 'cs': ['OmniSharp'] }
 
 " Update semantic highlighting on BufEnter, InsertLeave and TextChanged
-let g:OmniSharp_highlighting = 2
+let g:OmniSharp_highlighting = 1
