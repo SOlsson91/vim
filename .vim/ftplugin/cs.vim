@@ -10,8 +10,6 @@
 " ----------------------------------
 " CSharp Specific
 " ----------------------------------
-let g:OmniSharp_server_stdio = 0
-let g:OmniSharp_server_use_mono = 1
 " Set the type lookup function to use the preview window instead of echoing it
 "let g:OmniSharp_typeLookupInPreview = 1
 
@@ -35,12 +33,14 @@ set completepopup=highlight:Pmenu,border:on
 " still be fetched when you need it with the :OmniSharpDocumentation command.
 let g:omnicomplete_fetch_full_documentation = 1
 
-" Set desired preview window height for viewing documentation.
-" You might also want to look at the echodoc plugin.
-set previewheight=5
-
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
 let g:ale_linters = { 'cs': ['OmniSharp'] }
 
 " Update semantic highlighting on BufEnter, InsertLeave and TextChanged
 let g:OmniSharp_highlighting = 1
+
+set completeopt=longest,menuone,popuphidden
+set completepopup=highlight:Pmenu,border:off
+
+nnoremap <silent> <leader>od :OmniSharpDocumentation<CR>
+nnoremap <silent> <leader>os :OmniSharpSignatureHelp<CR>
