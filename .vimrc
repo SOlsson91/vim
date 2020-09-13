@@ -61,6 +61,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'OmniSharp/omnisharp-vim'
