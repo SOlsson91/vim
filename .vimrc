@@ -46,7 +46,6 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set laststatus=2
-
 " ----------------------------------
 " Plugins
 " ----------------------------------
@@ -114,6 +113,7 @@ inoremap <silent><expr> <TAB>
             \ pumvisible() ? "\<C-n>" :
             \ <SID>check_back_space() ? "\<TAB>" :
             \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -124,8 +124,6 @@ else
   set signcolumn=yes
 endif
 
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-inoremap <silent><expr> <C-space> coc#refresh()
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
