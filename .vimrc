@@ -124,7 +124,6 @@ else
   set signcolumn=yes
 endif
 
-
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
