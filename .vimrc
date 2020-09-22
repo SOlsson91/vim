@@ -69,6 +69,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'dense-analysis/ale'
 
 Plug 'morhetz/gruvbox'
 call plug#end()
