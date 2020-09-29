@@ -16,9 +16,6 @@ let g:omnicomplete_fetch_full_documentation = 1
 let g:OmniSharp_highlighting = 1
 let g:OmniSharp_timeout = 5
 
-" Tell ALE to use OmniSharp for linting C# files, and no other linters.
-let g:ale_linters = { 'cs': ['OmniSharp'] }
-
 if has('patch-8.1.1880')
   set completeopt=longest,menuone,popuphidden
   " Highlight the completion documentation popup background/foreground the same as

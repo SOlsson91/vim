@@ -92,6 +92,11 @@ let g:netrw_winsize = 25
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
 	\ }
+
+" Tell ALE to use OmniSharp for linting C# files, and no other linters.
+let g:ale_linters = { 'cs': ['OmniSharp'] }
+let g:ale_linters_explicit = 1
+
 set noshowmode
 
 " ----------------------------------
