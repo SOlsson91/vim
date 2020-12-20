@@ -11,3 +11,5 @@
 " Markdown Specific
 " ----------------------------------
 set colorcolumn=
+set wrap
+set linebreak

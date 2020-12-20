@@ -12,6 +12,7 @@
 " ----------------------------------
 set spelllang=en_gb
 set nospell
+set wrap
 set linebreak
 set colorcolumn= 
 
