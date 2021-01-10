@@ -29,7 +29,6 @@ set nobackup
 set undodir=~/.vim/undoir
 set undofile
 set incsearch
-set termguicolors
 set scrolloff=8
 set ruler
 
@@ -77,8 +76,11 @@ Plug 'dense-analysis/ale'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'morhetz/gruvbox'
+Plug 'voldikss/vim-floaterm'
+Plug 'cdelledonne/vim-cmake'
 call plug#end()
 
+"set termguicolors # Not working with floatterm for some reason
 colorscheme gruvbox
 set background=dark
 
@@ -89,10 +91,10 @@ endif
 let loaded_matchparen = 1
 let mapleader = " "
 
-let g:netrw_browse_split=2
-let g:vrfr_rg = 'true'
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
+"let g:netrw_browse_split=2
+"let g:vrfr_rg = 'true'
+"let g:netrw_banner = 0
+"let g:netrw_winsize = 25
 
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
@@ -107,18 +109,31 @@ set noshowmode
 " ----------------------------------
 " Keybindings
 " ----------------------------------
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+" Moving around the tabs
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+nnoremap <F12> :nohlsearch<CR>
+
+nnoremap <leader>u :UndotreeToggle<CR>
+
+let g:floaterm_keymap_new = '<Leader>ft'
+let g:floaterm_keymap_toggle = '<Leader>t'
+let g:floaterm_position = 'bottom'
+let g:floaterm_height = 0.4
+let g:floaterm_wintype = 'popupwin'
+
+nmap <silent> <c-t> :FloatermNew --wintype=popupwin lf<cr>
+nnoremap <c-q> :FloatermKill!<CR>
+
 nnoremap <leader>ps :Rg<SPACE>
 
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
 nnoremap <C-p> :GFiles<CR>
+let g:fzf_layout = { 'down': '40%' }
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -174,7 +189,6 @@ nnoremap B ^
 nnoremap E $
 nnoremap $          <nop>
 nnoremap ^          <nop>
-
 nnoremap <Left>     <nop>
 nnoremap <Right>    <nop>
 nnoremap <Up>       <nop>
