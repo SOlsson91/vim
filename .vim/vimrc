@@ -64,23 +64,19 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'sheerun/vim-polyglot'
+Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'dense-analysis/ale'
-Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-dispatch'
-Plug 'morhetz/gruvbox'
 Plug 'voldikss/vim-floaterm'
 Plug 'cdelledonne/vim-cmake'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-"set termguicolors # Not working with floatterm for some reason
+"set termguicolors " Not working with floatterm for some reason
 colorscheme gruvbox
 set background=dark
 
@@ -91,20 +87,22 @@ endif
 let loaded_matchparen = 1
 let mapleader = " "
 
-"let g:netrw_browse_split=2
-"let g:vrfr_rg = 'true'
-"let g:netrw_banner = 0
-"let g:netrw_winsize = 25
-
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste'],
+    \       [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+    \ },
 	\ }
+
+set noshowmode
 
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
 let g:ale_linters = { 'cs': ['OmniSharp'] }
 let g:ale_linters_explicit = 1
-
-set noshowmode
 
 " ----------------------------------
 " Keybindings
@@ -120,11 +118,10 @@ nnoremap <leader>u :UndotreeToggle<CR>
 
 let g:floaterm_keymap_new = '<Leader>ft'
 let g:floaterm_keymap_toggle = '<Leader>t'
+let g:floaterm_wintype = 'normal'
 let g:floaterm_position = 'bottom'
-let g:floaterm_height = 0.4
-let g:floaterm_wintype = 'popupwin'
 
-nmap <silent> <c-t> :FloatermNew --wintype=popupwin lf<cr>
+nmap <silent> <c-t> :FloatermNew --wintype=normal --position=bottom lf<cr>
 nnoremap <c-q> :FloatermKill!<CR>
 
 nnoremap <leader>ps :Rg<SPACE>
