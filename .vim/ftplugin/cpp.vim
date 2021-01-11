@@ -18,6 +18,19 @@ nnoremap <F7> :make!<cr>
 nmap <leader>cg :CMakeGenerate<cr>
 nmap <leader>cb :CMakeBuild<cr>
 
+
+" Jump to first error in CMake when there is one
+let g:cmake_jump_on_error = 0
+augroup vim-cmake-group
+  autocmd User CMakeBuildFailed :cfirst
+augroup END
+
+" Close the Build if succeeded
+augroup vim-cmake-group
+  autocmd! User CMakeBuildSucceeded CMakeClose
+augroup END
+
+
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 au BufWinEnter * match ExtraWhitespace /\s\+$/
