@@ -10,6 +10,7 @@
 " ----------------------------------
 " CSharp Specific
 " ----------------------------------
+filetype indent plugin on
 " Set the type lookup function to use the preview window instead of echoing it
 let g:OmniSharp_typeLookupInPreview = 1
 let g:omnicomplete_fetch_full_documentation = 1

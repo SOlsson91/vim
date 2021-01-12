@@ -17,6 +17,7 @@ nnoremap <F7> :make!<cr>
 
 nmap <leader>cg :CMakeGenerate<cr>
 nmap <leader>cb :CMakeBuild<cr>
+nmap <leader>cq :CMakeClose<cr>
 
 let g:cmake_default_config = 'build'
 let g:cmake_jump_on_error = 0
