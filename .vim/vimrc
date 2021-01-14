@@ -122,6 +122,7 @@ let g:floaterm_keymap_new = '<Leader>ft'
 let g:floaterm_keymap_toggle = '<Leader>t'
 let g:floaterm_wintype = 'normal'
 let g:floaterm_position = 'bottom'
+let g:floaterm_autoclose = 1
 
 nmap <silent> <c-t> :FloatermNew --wintype=normal --position=bottom lf<cr>
 nnoremap <c-q> :FloatermKill!<CR>
