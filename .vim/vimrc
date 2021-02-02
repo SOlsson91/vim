@@ -73,7 +73,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'voldikss/vim-floaterm'
 Plug 'cdelledonne/vim-cmake'
 Plug 'morhetz/gruvbox'
 call plug#end()
@@ -116,15 +115,6 @@ nnoremap <c-l> <c-w>l
 nnoremap <F12> :nohlsearch<CR>
 
 nnoremap <leader>u :UndotreeToggle<CR>
-
-let g:floaterm_keymap_new = '<Leader>ft'
-let g:floaterm_keymap_toggle = '<Leader>t'
-let g:floaterm_wintype = 'normal'
-let g:floaterm_position = 'bottom'
-let g:floaterm_autoclose = 1
-
-nmap <silent> <c-t> :FloatermNew --wintype=normal --position=bottom lf<cr>
-nnoremap <c-q> :FloatermKill!<CR>
 
 nnoremap <leader>ps :Rg<SPACE>
 
@@ -182,6 +172,11 @@ nmap <leader>g] <Plug>(coc-diagnostic-next)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
 nnoremap <leader>cr :CocRestart
+
+" Git
+nmap <leader>gf :diffget //3<CR>
+nmap <leader>gj :diffget //2<CR>
+nmap <leader>gs :G<CR>
 
 " Remove the use of some keys
 nnoremap B ^
