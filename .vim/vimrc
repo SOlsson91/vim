@@ -114,6 +114,17 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 
+" http://vimcasts.org/episodes/the-edit-command/
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<CR>
+" Edit Window
+map <leader>ew :e %%
+" Edit Split
+map <leader>es :sp %%
+" Edit Vertical Split
+map <leader>ev :vsp %%
+" Edit tab
+map <leader>et :tabe %%
+
 nmap <silent> <leader>/ :nohlsearch<CR>
 " Yank to end of line from current position
 nnoremap Y y$
