@@ -1,3 +1,5 @@
+***Archiving since I have moved over to using [Neovim](https://github.com/SOlsson91/nvim)***
+
 # Vim Settings
 *Have now moved over to nvim. You can find my repo for that at [github](https://github.com/SOlsson91/nvim)*
 
